@@ -1,0 +1,15 @@
+{
+  "name": "vitepressNo4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "梁远东 <10886950+liang14658fox@user.noreply.gitee.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.45"
+  },
+   "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  }
+}
