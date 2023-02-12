@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as r}from"./app.bf436e9b.js";const l=JSON.parse('{"title":"test","description":"","frontmatter":{"title":"test"},"headers":[],"relativePath":"articles/other/03.目录.md"}'),a={name:"articles/other/03.目录.md"};function s(o,c,n,_,i,p){return e(),r("div")}const m=t(a,[["render",s]]);export{l as __pageData,m as default};
