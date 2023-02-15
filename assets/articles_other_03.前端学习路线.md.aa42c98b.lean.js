@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as l,a as s}from"./app.de68522d.js";const j=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/other/03.前端学习路线.md"}'),i={name:"articles/other/03.前端学习路线.md"},o=s("",9),t=[o];function d(c,m,n,r,p,u){return e(),l("div",null,t)}const x=a(i,[["render",d]]);export{j as __pageData,x as default};
