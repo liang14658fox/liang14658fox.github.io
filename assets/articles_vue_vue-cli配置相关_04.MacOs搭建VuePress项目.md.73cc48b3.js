@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as t}from"./app.93bf998d.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/vue/vue-cli配置相关/04.MacOs搭建VuePress项目.md"}'),a={name:"articles/vue/vue-cli配置相关/04.MacOs搭建VuePress项目.md"};function r(c,o,_,n,i,p){return s(),t("div")}const d=e(a,[["render",r]]);export{l as __pageData,d as default};
