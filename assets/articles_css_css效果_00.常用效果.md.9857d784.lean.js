@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as l}from"./app.336ec898.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/css/css效果/00.常用效果.md"}'),e={name:"articles/css/css效果/00.常用效果.md"},p=l("",10),o=[p];function t(c,r,i,D,F,y){return n(),a("div",null,o)}const m=s(e,[["render",t]]);export{u as __pageData,m as default};
