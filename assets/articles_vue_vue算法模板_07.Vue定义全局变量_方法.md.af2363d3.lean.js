@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as l}from"./app.82e072de.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/vue/vue算法模板/07.Vue定义全局变量&方法.md"}'),p={name:"articles/vue/vue算法模板/07.Vue定义全局变量&方法.md"},e=l("",28),o=[e];function t(c,r,i,D,y,F){return n(),a("div",null,o)}const b=s(p,[["render",t]]);export{A as __pageData,b as default};
