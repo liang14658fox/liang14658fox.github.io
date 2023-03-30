@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,a as l}from"./app.82e072de.js";const A=JSON.parse('{"title":"状态管理","description":"","frontmatter":{"title":"状态管理"},"headers":[],"relativePath":"articles/vue/vuex/01.vuex.md"}'),p={name:"articles/vue/vuex/01.vuex.md"},e=l("",80),o=[e];function t(c,r,i,F,y,D){return n(),a("div",null,o)}const C=s(p,[["render",t]]);export{A as __pageData,C as default};
