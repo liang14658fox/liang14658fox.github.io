@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as r}from"./app.4462bc18.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/vue/vue算法模板/05.Router路由传参.md"}'),a={name:"articles/vue/vue算法模板/05.Router路由传参.md"};function o(s,c,_,n,i,p){return t(),r("div")}const l=e(a,[["render",o]]);export{d as __pageData,l as default};

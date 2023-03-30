@@ -1,0 +1,1 @@
+import{_ as s,o as e,c as t}from"./app.52ad75d0.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/css/css高级/01.css变量.md"}'),c={name:"articles/css/css高级/01.css变量.md"};function a(r,o,n,_,i,p){return e(),t("div")}const m=s(c,[["render",a]]);export{l as __pageData,m as default};
