@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.52ad75d0.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/vue/vue算法模板/06.Watch监听器.md"}'),c={name:"articles/vue/vue算法模板/06.Watch监听器.md"};function r(s,o,_,n,i,p){return t(),a("div")}const m=e(c,[["render",r]]);export{l as __pageData,m as default};
