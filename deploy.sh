@@ -18,7 +18,15 @@ git commit -m 'deploy'
 
 # 如果部署到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-git push -f git@github.com:liang14658fox/liang14658fox.github.io.git master
+# git push -f git@github.com:liang14658fox/liang14658fox.github.io.git main 
+
+# git push -f git@github.com:liang14658foxgithub/liang14658foxgithub.github.io.git main 
+# git remote add origin https://github.com/liang14658foxgithub/docs.git 
+git remote rm origin
+git remote add origin https://github.com/liang14658foxgithub/docs.git 
+git push origin main
+# git push -f https://gitee.com/liang14658fox/docs.git dict
+
 
 
 # 如果是部署到 https://<USERNAME>.github.io/<REPO>

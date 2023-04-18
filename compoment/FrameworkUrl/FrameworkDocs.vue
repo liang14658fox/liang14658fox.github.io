@@ -1,0 +1,48 @@
+<script setup>
+const navData = [
+  {
+    id: 1,
+    text: 'Docusaurus',
+    link: 'https://docusaurus.io/zh-CN/',
+    desc: '基于React的文档框架',
+  },{
+    id: 2,
+    text: 'VitePress',
+    link: 'https://vitepress.vuejs.org/',
+    desc: '基于Vite与Vuepress的文档框架，生肉',
+  },
+  {
+    id: 4,
+    text: 'vuepressCN',
+    link: 'https://vitejs.cn/vitepress/',
+    desc: 'Vue 驱动的静态网站生成器，中文网站',
+  },{
+    id: 4,
+    text: 'vuepress',
+    link: 'https://vuepress.vuejs.org/zh/',
+    desc: 'Vue 驱动的静态网站生成器',
+  },
+  
+]
+</script>
+
+<template>
+  <div class="grid auto-rows-auto grid-cols-2 gap-[12px]">
+    <section v-for="navItem of navData" :key="navItem.id">
+      <a :href="navItem.link" rel="noreferrer" target="_blank" class="group">
+        <section
+          class="flex h-full flex-col border-1  border-solid border-[var(--vp-c-border)]/[.55] rounded-[8px] leading-[24px] px-[24px] py-[12px] group-hover:shadow">
+          <span class="text-gray-600 group-hover:text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-100">
+            {{ navItem.text }}
+          </span>
+          <span
+            class="mb-auto text-sm text-gray-700 opacity-50 dark:text-gray-300 dark:group-hover:text-gray-50 min-h-[20px]">
+            {{ navItem.desc ?? navItem.text }}
+          </span>
+        </section>
+      </a>
+    </section>
+  </div>
+</template>
+
+<style scoped></style>
