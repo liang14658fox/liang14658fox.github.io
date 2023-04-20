@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.802c4466.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/d_native/a_es6/01.声明变量6种方法.md"}'),_={name:"documentcatalog/d_native/a_es6/01.声明变量6种方法.md"};function o(c,n,r,s,d,i){return t(),a("div")}const l=e(_,[["render",o]]);export{m as __pageData,l as default};
