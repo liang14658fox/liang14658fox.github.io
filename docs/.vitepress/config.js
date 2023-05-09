@@ -19,7 +19,7 @@ module.exports = {
   lang: "cn-ZH",
   markdown: {
     lineNumbers: true //为所有代码启动行号
-  }, 
+  },
   themeConfig: {
     siteTitle: "liang14658fox",
     logo: "/logo.png",
@@ -32,43 +32,66 @@ module.exports = {
         text: "开箱即用",
         items: [
           {
-            text: "🎹 环境/依赖配置",
+            text: "🍓 环境配置",
             link: "/documentcatalog/b_environment/a_environmental_construction/00.目录"
           },
           {
-            text: "✨ 框架",
-            link: "/documentcatalog/c_frame/a_vue/00.Vue组件模板"
+            text: "🥝 快速框架",
+            link: "/documentcatalog/c_frame/a_vue_official/00.Vue组件模板"
           },
           {
-            text: "组件",
-            link: "/documentcatalog/c_uimaptools/b_element/01.表格与分页"
+            text: "🎃 组件应用",
+            link: "/documentcatalog/c_uimaptools/a_elementStyle/01.el-table行高"
           },
           {
             items: [
               {
-                text: 'JavaScript',
-                link:'/documentcatalog/d_native/b_javascript/01.console高级'
+                text: '🎹 JavaScript',
+                link: '/documentcatalog/d_native/b_javascript/01.console高级'
               },
               {
-                text: "CSS",
-                link: "/documentcatalog/d_native/a_css/00.常用效果"
+                text: '⛺ ES6',
+                link: '/documentcatalog/d_native/a_es6/00.导读'
+              },
+              {
+                text: '🎹 TypeScript',
+                link: '/documentcatalog/d_native/e_typescript/00.导读'
+              },
+              {
+                text: "💄 CSS",
+                link: "/documentcatalog/d_style/a_css/00.常用效果"
               },
             ]
           }
         ]
       },
       {
-        text: "🦑 OneNote",
+        text: "OneNote",
         items: [
           {
-            text: "高级前端",
+            text: "🦑 高级前端",
             link: "/documentcatalog/e_notebook/a_javascript_dvanced/01.构造函数和原型"
           },
           {
-            text: "Tools",
-            link: "/documentcatalog/e_notebook/c_other/01.常用git命令"
-          }
-
+            text: "🎧️ Tools",
+            link: "/documentcatalog/f_tools/c_other/01.常用git命令"
+          },
+          {
+            items: [
+              {
+                text: "🌱 Middel-earth",
+                link: "https://lotr.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5"
+              },
+              {
+                text: "🐀 chatGPT",
+                link: "https://openai.com/blog/chatgpt"
+              },
+              {
+                text: "🦖 Docuasurus",
+                link: "https://docusaurus.io/zh-CN/"
+              },
+            ]
+          },
         ]
       },
       {
@@ -93,33 +116,46 @@ module.exports = {
       )),
       //JS快速框架
       "/documentcatalog/c_frame/": autoGetSidebarOptionBySrcDir(
-        path.resolve(__dirname, "../documentcatalog/c_frame/a_vue"),
-        "Vue"
+        path.resolve(__dirname, "../documentcatalog/c_frame/a_vue_official"),
+        "Vue官方API"
       ).concat(autoGetSidebarOptionBySrcDir(
-        path.resolve(__dirname, "../documentcatalog/c_frame/b_react"),
-        "React"
+        path.resolve(__dirname, "../documentcatalog/c_frame/b_vue_custom"),
+        "基于Vue实现的功能"
       )),
       //UI组件、可视化JS
       "/documentcatalog/c_uimaptools/": autoGetSidebarOptionBySrcDir(
-        path.resolve(__dirname, "../documentcatalog/c_uimaptools/b_element"),
-        "Element"
+        path.resolve(__dirname, "../documentcatalog/c_uimaptools/a_elementStyle"),
+        "Element样式"
       ).concat(autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/c_uimaptools/b_elementTool"),
+        "Element功能"
+      )).concat(autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../documentcatalog/c_uimaptools/c_echarts"),
         "Echarts"
       )),
-      "/documentcatalog/d_native/": autoGetSidebarOptionBySrcDir(
-        path.resolve(__dirname, "../documentcatalog/d_native/a_css"),
+      "/documentcatalog/d_style/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/d_style/a_css"),
         "CSS效果"
       ).concat(autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/d_style/b_design"),
+        "移动端适配"
+      )), 
+      "/documentcatalog/d_native/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../documentcatalog/d_native/b_javascript"),
-        "JavaScript"
-      )).concat(autoGetSidebarOptionBySrcDir(
+        "JS"
+      ).concat(autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../documentcatalog/d_native/c_data_structure"),
         "数据结构"
       )).concat(autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../documentcatalog/d_native/d_syntactic_sugar"),
         "语法优化"
-      )),
+      )).concat(autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/d_native/a_es6"),
+        "ES6"
+      )).concat(autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/d_native/e_typescript"),
+        "TS"
+      )), 
       "/documentcatalog/e_notebook/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../documentcatalog/e_notebook/a_javascript_dvanced"),
         "JavaScript高级"
@@ -127,16 +163,20 @@ module.exports = {
         path.resolve(__dirname, "../documentcatalog/e_notebook/b_underlying_source_code"),
         "底层源码"
       )).concat(autoGetSidebarOptionBySrcDir(
-        path.resolve(__dirname, "../documentcatalog/e_notebook/c_other"),
-        "其他工具"
-      )).concat(autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../documentcatalog/e_notebook/d_SeniorDevelopment"),
         "进阶"
-      )), 
+      )),
+      "/documentcatalog/f_tools/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/f_tools/c_other"),
+        "其他工具"
+      ).concat(autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../documentcatalog/f_tools/d_zhihuiqd"),
+        "青岛微智慧"
+      ))
     },
     socialLinks: [{
       icon: "github",
-      link: "https://github.com/liang14658fox/liang14658fox.github.io"
+      link: "https://github.com/liang14658fox/liang14658fox.github.io/tree/master"
     },
     {
       icon: {

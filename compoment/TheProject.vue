@@ -2,16 +2,15 @@
 const demo = [
   {
     name: "基于Echarts的人物关系分析图",
-    description:
-      "使用Echarts基于vue3和vite搭建一个简单的电影小说人物关系分析图并且同步到Git Pages",
+    description: "",
     tags: ["vue3", "vite", "vitepress", "博客"],
     link: "https://github.com/aiai0603/aiai0603.github.io",
     pre: "https://aiai0603.github.io/",
     href: "/articles/other/vitepress/01.vitepress的搭建",
-    img: "/docs/react.jpg",
+    img: "/react.jpg",
   },
   {
-    name: "显卡性能天梯",
+    name: "参数横向对比可视化工具",
     description: "",
     tags: ["vue3", "ECharts", "node.js"],
     link: "",
@@ -20,25 +19,7 @@ const demo = [
     img: "",
   },
   {
-    name: "教育局官网",
-    description: "",
-    tags: ["vue2", "Element", "Ant D"],
-    link: "",
-    pre: "",
-    href: "",
-    img: "",
-  },
-  {
-    name: "税务共享中心",
-    description: "",
-    tags: ["JavaScript"],
-    link: "",
-    pre: "",
-    href: "",
-    img: "",
-  },
-  {
-    name: "中土世界地图剧情",
+    name: "互动地图",
     description: "",
     tags: ["JavaScript"],
     link: "",
@@ -48,6 +29,24 @@ const demo = [
   },
   {
     name: "科技树",
+    description: "适用于游戏、学习、建设与发展的可互动科技树。",
+    tags: ["JavaScript","vue2","element-ui"],
+    link: "",
+    pre: "",
+    href: "",
+    img: "",
+  },
+  {
+    name: "Docusaurus博客",
+    description: "基于React的个人博客",
+    tags: ["JavaScript"],
+    link: "",
+    pre: "",
+    href: "",
+    img: "",
+  },
+  {
+    name: "信用卡理财工具",
     description: "",
     tags: ["JavaScript"],
     link: "",
@@ -55,7 +54,15 @@ const demo = [
     href: "",
     img: "",
   },
-
+  {
+    name: "照片分类备份系统",
+    description: "",
+    tags: ["JavaScript"],
+    link: "",
+    pre: "",
+    href: "",
+    img: "",
+  },
 ];
 
 const online = []
