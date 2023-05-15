@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.e54fbf98.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/c_frame/b_vue_custom/02.Vue加载视频流.md"}'),_={name:"documentcatalog/c_frame/b_vue_custom/02.Vue加载视频流.md"};function c(o,r,s,n,m,u){return t(),a("div")}const f=e(_,[["render",c]]);export{p as __pageData,f as default};
