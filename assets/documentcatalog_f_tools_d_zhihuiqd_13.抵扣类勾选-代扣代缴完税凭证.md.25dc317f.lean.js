@@ -1,0 +1,1 @@
+import{_,o as t,c as e}from"./app.1de0ee66.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/f_tools/d_zhihuiqd/13.抵扣类勾选-代扣代缴完税凭证.md"}'),o={name:"documentcatalog/f_tools/d_zhihuiqd/13.抵扣类勾选-代扣代缴完税凭证.md"};function a(c,r,s,n,d,i){return t(),e("div")}const m=_(o,[["render",a]]);export{l as __pageData,m as default};
