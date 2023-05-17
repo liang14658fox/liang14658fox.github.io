@@ -1,1 +1,0 @@
-import{_ as t,o as _,c as e}from"./app.1de0ee66.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/f_tools/d_zhihuiqd/11.抵扣类勾选-海关缴款书.md"}'),o={name:"documentcatalog/f_tools/d_zhihuiqd/11.抵扣类勾选-海关缴款书.md"};function a(c,r,s,n,d,i){return _(),e("div")}const m=t(o,[["render",a]]);export{l as __pageData,m as default};
