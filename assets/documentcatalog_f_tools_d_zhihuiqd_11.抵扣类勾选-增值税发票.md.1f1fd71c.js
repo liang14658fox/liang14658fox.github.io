@@ -1,0 +1,1 @@
+import{_ as t,o as _,c as e}from"./app.f0e27362.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/f_tools/d_zhihuiqd/11.抵扣类勾选-增值税发票.md"}'),o={name:"documentcatalog/f_tools/d_zhihuiqd/11.抵扣类勾选-增值税发票.md"};function a(c,r,s,n,d,i){return _(),e("div")}const m=t(o,[["render",a]]);export{l as __pageData,m as default};
