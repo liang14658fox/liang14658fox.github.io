@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as e}from"./app.514b1baf.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/d_native/b_javascript/07.FormData对象.md"}'),o={name:"documentcatalog/d_native/b_javascript/07.FormData对象.md"};function r(c,n,_,s,d,i){return t(),e("div")}const l=a(o,[["render",r]]);export{p as __pageData,l as default};
