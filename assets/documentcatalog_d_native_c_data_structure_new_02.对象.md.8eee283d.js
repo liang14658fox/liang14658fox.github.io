@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as a}from"./app.d713a44f.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/d_native/c_data_structure_new/02.对象.md"}'),c={name:"documentcatalog/d_native/c_data_structure_new/02.对象.md"};function _(r,n,o,s,d,i){return e(),a("div")}const u=t(c,[["render",_]]);export{m as __pageData,u as default};
