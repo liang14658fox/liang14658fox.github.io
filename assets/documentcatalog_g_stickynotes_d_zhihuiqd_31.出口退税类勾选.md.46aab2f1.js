@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as _}from"./app.31bd32c2.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/g_stickynotes/d_zhihuiqd/31.出口退税类勾选.md"}'),a={name:"documentcatalog/g_stickynotes/d_zhihuiqd/31.出口退税类勾选.md"};function o(c,s,n,r,d,i){return e(),_("div")}const l=t(a,[["render",o]]);export{m as __pageData,l as default};
