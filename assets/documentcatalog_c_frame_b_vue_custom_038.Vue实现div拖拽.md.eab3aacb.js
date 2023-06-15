@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.2865ab21.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/c_frame/b_vue_custom/038.Vue实现div拖拽.md"}'),c={name:"documentcatalog/c_frame/b_vue_custom/038.Vue实现div拖拽.md"};function o(_,r,s,n,d,m){return t(),a("div")}const p=e(c,[["render",o]]);export{i as __pageData,p as default};
