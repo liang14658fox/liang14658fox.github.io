@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as _}from"./app.2865ab21.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"documentcatalog/d_style/a_css/104.数字字符宽度设置相等.md"}'),a={name:"documentcatalog/d_style/a_css/104.数字字符宽度设置相等.md"};function s(c,o,r,n,d,p){return e(),_("div")}const i=t(a,[["render",s]]);export{m as __pageData,i as default};
