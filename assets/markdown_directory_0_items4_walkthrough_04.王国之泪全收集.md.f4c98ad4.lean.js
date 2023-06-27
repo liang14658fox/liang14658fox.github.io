@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as r}from"./app.779b484d.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"markdown/directory_0/items4_walkthrough/04.王国之泪全收集.md"}'),_={name:"markdown/directory_0/items4_walkthrough/04.王国之泪全收集.md"};function a(o,s,c,n,d,i){return e(),r("div")}const l=t(_,[["render",a]]);export{p as __pageData,l as default};
