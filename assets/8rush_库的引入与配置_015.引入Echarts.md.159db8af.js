@@ -1,0 +1,63 @@
+import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.681fc4ae.js";const d=JSON.parse('{"title":"Apache Echarts","description":"","frontmatter":{"title":"Apache Echarts"},"headers":[],"relativePath":"8rush/库的引入与配置/015.引入Echarts.md","filePath":"8rush/库的引入与配置/015.引入Echarts.md"}'),p={name:"8rush/库的引入与配置/015.引入Echarts.md"},t=l(`<h2 id="_1-vue2引入echarts" tabindex="-1">1.vue2引入Echarts <a class="header-anchor" href="#_1-vue2引入echarts" aria-label="Permalink to &quot;1.vue2引入Echarts&quot;">​</a></h2><ol><li><p>安装：首先需要通过npm安装Echarts，在命令行工具中运行<code>npm install echarts -S</code>命令，即可完成安装。</p></li><li><p>全局引入：接下来，在main.js文件中引入echarts，使用<code>import echarts from &#39;echarts&#39;</code>，并将其设置为Vue的原型属性，即可完成Echarts的全局引入。</p></li><li><p>挂载实例：最后，在vue文件中，通过<code>mounted()</code>实例挂载的方式，创建一个Echarts实例，并调用实例的<code>setOption()</code>方法，传入Echarts的配置项，即可完成Echarts的挂载。</p></li></ol><p>以下是一个Echarts例子：</p><div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">&lt;</span><span style="color:#85E89D;">template</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8;">	&lt;</span><span style="color:#85E89D;">div</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8;">		&lt;</span><span style="color:#85E89D;">div</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">ref</span><span style="color:#E1E4E8;">=</span><span style="color:#9ECBFF;">&quot;chartDiv&quot;</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">style</span><span style="color:#E1E4E8;">=</span><span style="color:#9ECBFF;">&quot;width: 600px;height:400px;&quot;</span><span style="color:#E1E4E8;">&gt;&lt;/</span><span style="color:#85E89D;">div</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8;">	&lt;/</span><span style="color:#85E89D;">div</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8;">&lt;/</span><span style="color:#85E89D;">template</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">&lt;</span><span style="color:#85E89D;">script</span><span style="color:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8;">	</span><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> echarts </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;echarts&#39;</span></span>
+<span class="line"><span style="color:#E1E4E8;">	</span><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
+<span class="line"><span style="color:#E1E4E8;">		</span><span style="color:#B392F0;">data</span><span style="color:#E1E4E8;">() {</span></span>
+<span class="line"><span style="color:#E1E4E8;">			</span><span style="color:#F97583;">return</span><span style="color:#E1E4E8;"> {</span></span>
+<span class="line"><span style="color:#E1E4E8;">				chart: </span><span style="color:#79B8FF;">null</span></span>
+<span class="line"><span style="color:#E1E4E8;">			}</span></span>
+<span class="line"><span style="color:#E1E4E8;">		},</span></span>
+<span class="line"><span style="color:#E1E4E8;">		</span><span style="color:#B392F0;">mounted</span><span style="color:#E1E4E8;">() {</span></span>
+<span class="line"><span style="color:#E1E4E8;">			</span><span style="color:#79B8FF;">this</span><span style="color:#E1E4E8;">.chart </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> echarts.</span><span style="color:#B392F0;">init</span><span style="color:#E1E4E8;">(</span><span style="color:#79B8FF;">this</span><span style="color:#E1E4E8;">.$refs.chartDiv)</span></span>
+<span class="line"><span style="color:#E1E4E8;">			</span><span style="color:#79B8FF;">this</span><span style="color:#E1E4E8;">.chart.</span><span style="color:#B392F0;">setOption</span><span style="color:#E1E4E8;">({</span></span>
+<span class="line"><span style="color:#E1E4E8;">				xAxis: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">					type: </span><span style="color:#9ECBFF;">&#39;category&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#E1E4E8;">					data: [</span><span style="color:#9ECBFF;">&#39;Mon&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#9ECBFF;">&#39;Tue&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#9ECBFF;">&#39;Wed&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#9ECBFF;">&#39;Thu&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#9ECBFF;">&#39;Fri&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#9ECBFF;">&#39;Sat&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#9ECBFF;">&#39;Sun&#39;</span><span style="color:#E1E4E8;">]</span></span>
+<span class="line"><span style="color:#E1E4E8;">				},</span></span>
+<span class="line"><span style="color:#E1E4E8;">				yAxis: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">					type: </span><span style="color:#9ECBFF;">&#39;value&#39;</span></span>
+<span class="line"><span style="color:#E1E4E8;">				},</span></span>
+<span class="line"><span style="color:#E1E4E8;">				series: [{</span></span>
+<span class="line"><span style="color:#E1E4E8;">					data: [</span><span style="color:#79B8FF;">820</span><span style="color:#E1E4E8;">, </span><span style="color:#79B8FF;">932</span><span style="color:#E1E4E8;">, </span><span style="color:#79B8FF;">901</span><span style="color:#E1E4E8;">, </span><span style="color:#79B8FF;">934</span><span style="color:#E1E4E8;">, </span><span style="color:#79B8FF;">1290</span><span style="color:#E1E4E8;">, </span><span style="color:#79B8FF;">1330</span><span style="color:#E1E4E8;">, </span><span style="color:#79B8FF;">1320</span><span style="color:#E1E4E8;">],</span></span>
+<span class="line"><span style="color:#E1E4E8;">					type: </span><span style="color:#9ECBFF;">&#39;line&#39;</span></span>
+<span class="line"><span style="color:#E1E4E8;">				}]</span></span>
+<span class="line"><span style="color:#E1E4E8;">			})</span></span>
+<span class="line"><span style="color:#E1E4E8;">		}</span></span>
+<span class="line"><span style="color:#E1E4E8;">	}</span></span>
+<span class="line"><span style="color:#E1E4E8;">&lt;/</span><span style="color:#85E89D;">script</span><span style="color:#E1E4E8;">&gt;</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">template</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#24292E;">	&lt;</span><span style="color:#22863A;">div</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#24292E;">		&lt;</span><span style="color:#22863A;">div</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">ref</span><span style="color:#24292E;">=</span><span style="color:#032F62;">&quot;chartDiv&quot;</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">style</span><span style="color:#24292E;">=</span><span style="color:#032F62;">&quot;width: 600px;height:400px;&quot;</span><span style="color:#24292E;">&gt;&lt;/</span><span style="color:#22863A;">div</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#24292E;">	&lt;/</span><span style="color:#22863A;">div</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">template</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">script</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#24292E;">	</span><span style="color:#D73A49;">import</span><span style="color:#24292E;"> echarts </span><span style="color:#D73A49;">from</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;echarts&#39;</span></span>
+<span class="line"><span style="color:#24292E;">	</span><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#24292E;">		</span><span style="color:#6F42C1;">data</span><span style="color:#24292E;">() {</span></span>
+<span class="line"><span style="color:#24292E;">			</span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#24292E;">				chart: </span><span style="color:#005CC5;">null</span></span>
+<span class="line"><span style="color:#24292E;">			}</span></span>
+<span class="line"><span style="color:#24292E;">		},</span></span>
+<span class="line"><span style="color:#24292E;">		</span><span style="color:#6F42C1;">mounted</span><span style="color:#24292E;">() {</span></span>
+<span class="line"><span style="color:#24292E;">			</span><span style="color:#005CC5;">this</span><span style="color:#24292E;">.chart </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> echarts.</span><span style="color:#6F42C1;">init</span><span style="color:#24292E;">(</span><span style="color:#005CC5;">this</span><span style="color:#24292E;">.$refs.chartDiv)</span></span>
+<span class="line"><span style="color:#24292E;">			</span><span style="color:#005CC5;">this</span><span style="color:#24292E;">.chart.</span><span style="color:#6F42C1;">setOption</span><span style="color:#24292E;">({</span></span>
+<span class="line"><span style="color:#24292E;">				xAxis: {</span></span>
+<span class="line"><span style="color:#24292E;">					type: </span><span style="color:#032F62;">&#39;category&#39;</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">					data: [</span><span style="color:#032F62;">&#39;Mon&#39;</span><span style="color:#24292E;">, </span><span style="color:#032F62;">&#39;Tue&#39;</span><span style="color:#24292E;">, </span><span style="color:#032F62;">&#39;Wed&#39;</span><span style="color:#24292E;">, </span><span style="color:#032F62;">&#39;Thu&#39;</span><span style="color:#24292E;">, </span><span style="color:#032F62;">&#39;Fri&#39;</span><span style="color:#24292E;">, </span><span style="color:#032F62;">&#39;Sat&#39;</span><span style="color:#24292E;">, </span><span style="color:#032F62;">&#39;Sun&#39;</span><span style="color:#24292E;">]</span></span>
+<span class="line"><span style="color:#24292E;">				},</span></span>
+<span class="line"><span style="color:#24292E;">				yAxis: {</span></span>
+<span class="line"><span style="color:#24292E;">					type: </span><span style="color:#032F62;">&#39;value&#39;</span></span>
+<span class="line"><span style="color:#24292E;">				},</span></span>
+<span class="line"><span style="color:#24292E;">				series: [{</span></span>
+<span class="line"><span style="color:#24292E;">					data: [</span><span style="color:#005CC5;">820</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">932</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">901</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">934</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">1290</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">1330</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">1320</span><span style="color:#24292E;">],</span></span>
+<span class="line"><span style="color:#24292E;">					type: </span><span style="color:#032F62;">&#39;line&#39;</span></span>
+<span class="line"><span style="color:#24292E;">				}]</span></span>
+<span class="line"><span style="color:#24292E;">			})</span></span>
+<span class="line"><span style="color:#24292E;">		}</span></span>
+<span class="line"><span style="color:#24292E;">	}</span></span>
+<span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">script</span><span style="color:#24292E;">&gt;</span></span></code></pre></div>`,4),o=[t];function e(c,r,E,y,i,F){return a(),n("div",null,o)}const u=s(p,[["render",e]]);export{d as __pageData,u as default};
