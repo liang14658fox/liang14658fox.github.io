@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.681fc4ae.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"1_base_CSS/Design/说明.md","filePath":"1_base_CSS/Design/说明.md"}'),s={name:"1_base_CSS/Design/说明.md"};function _(n,r,o,c,i,p){return t(),a("div")}const f=e(s,[["render",_]]);export{m as __pageData,f as default};

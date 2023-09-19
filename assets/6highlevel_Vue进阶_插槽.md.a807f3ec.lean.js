@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.681fc4ae.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"6highlevel/Vue进阶/插槽.md","filePath":"6highlevel/Vue进阶/插槽.md"}'),r={name:"6highlevel/Vue进阶/插槽.md"};function o(s,c,n,i,l,_){return t(),a("div")}const h=e(r,[["render",o]]);export{d as __pageData,h as default};
