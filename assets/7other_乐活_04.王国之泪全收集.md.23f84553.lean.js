@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as r}from"./chunks/framework.681fc4ae.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"7other/乐活/04.王国之泪全收集.md","filePath":"7other/乐活/04.王国之泪全收集.md"}'),a={name:"7other/乐活/04.王国之泪全收集.md"};function o(_,s,c,n,p,d){return t(),r("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};
